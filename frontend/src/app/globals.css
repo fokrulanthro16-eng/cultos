@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090d16;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+/* Global Cultural Atmosphere */
+.global-culture-bg {
+  background: 
+    radial-gradient(circle at 12% 10%, rgba(14, 165, 233, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 88% 12%, rgba(20, 184, 166, 0.18) 0%, transparent 42%),
+    radial-gradient(circle at 50% 85%, rgba(99, 102, 241, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 50% 40%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #070b13 0%, #0b1324 50%, #070d18 100%);
+  background-attachment: fixed;
+}
+
+/* High-Contrast Executive Console Cards */
+.culture-card {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px -5px rgba(14, 165, 233, 0.15);
+}
+
+.culture-card-subtle {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 1rem;
+}
+
+.culture-card-glow-cyan {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 35px -8px rgba(6, 182, 212, 0.35);
+}
+
+.culture-card-glow-gold {
+  background: rgba(24, 20, 14, 0.9);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  box-shadow: 0 0 35px -8px rgba(245, 158, 11, 0.3);
+}
+
+.culture-card-glow-coral {
+  background: rgba(30, 16, 20, 0.9);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 0 30px -8px rgba(244, 63, 94, 0.25);
+}
+
+/* Subtle Landmark & Cloud SVG Motif Overlay */
+.landmark-watermark {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Animated gradient text */
+.text-gradient-cyan-gold {
+  background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 40%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
