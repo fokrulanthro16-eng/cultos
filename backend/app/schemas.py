@@ -186,4 +186,4 @@ class HealthResponse(BaseModel):
     version: str
     qloo_api_configured: bool
     gemini_api_configured: bool
-    environment: str
+    environment: str = "production"

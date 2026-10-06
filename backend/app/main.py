@@ -62,7 +62,7 @@ async def health_check():
         version="1.0.0",
         qloo_api_configured=settings.has_qloo_key,
         gemini_api_configured=bool(settings.effective_gemini_key),
-        environment=settings.ENV
+        environment=settings.effective_env
     )
 
 
